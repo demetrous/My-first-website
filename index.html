@@ -1,0 +1,122 @@
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Dmitrii Karaulanov — Software Engineer</title>
+    <meta name="description" content="Dmitrii Karaulanov — Software engineer (Cloud, Enterprise, AI) — portfolio and contact." />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand-block">
+          <h1 class="brand">Dmitrii Karaulanov</h1>
+          <p class="tagline">Software engineer — Enterprise solutions · Cloud · AI</p>
+        </div>
+        <nav class="main-nav" aria-label="Primary">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#exp-heading">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="nav-actions">
+            <button id="theme-toggle" aria-pressed="false" aria-label="Toggle color theme" title="Toggle theme">
+              <span class="theme-icon theme-icon--sun" aria-hidden="true">
+                <!-- sun icon -->
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true">
+                  <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                  <g stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 2v2"/>
+                    <path d="M12 20v2"/>
+                    <path d="M2 12h2"/>
+                    <path d="M20 12h2"/>
+                    <path d="M4.9 4.9l1.4 1.4"/>
+                    <path d="M17.7 17.7l1.4 1.4"/>
+                    <path d="M17.7 6.3l1.4-1.4"/>
+                    <path d="M4.9 19.1l1.4-1.4"/>
+                  </g>
+                </svg>
+              </span>
+              <span class="theme-icon theme-icon--moon" aria-hidden="true">
+                <!-- moon icon -->
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true">
+                  <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                </svg>
+              </span>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <section class="hero">
+        <div>
+          <h2>Hi — I'm Dmitrii</h2>
+          <p>I build scalable enterprise solutions and cloud-native systems, and apply AI to real business problems. 15+ years of experience across architecture, engineering, and delivery.</p>
+          <p><a class="btn" href="#contact">Contact me</a></p>
+        </div>
+      </section>
+      <section class="about" aria-labelledby="about-heading">
+        <h3 id="about-heading">About</h3>
+        <p>I'm a software engineer specializing in enterprise architectures, cloud platforms (AWS, Azure), and applying machine learning to products and operations. I focus on reliability, security, and pragmatic delivery.</p>
+      </section>
+
+      <section class="experience" aria-labelledby="exp-heading">
+        <h3 id="exp-heading">Selected experience</h3>
+        <ul>
+          <li>Led cloud migration programs for enterprise customers (microservices, CI/CD, IaC).</li>
+          <li>Designed ML-powered feature pipelines and productionized models.</li>
+          <li>Built resilient, high-throughput backend services and integrations.</li>
+        </ul>
+      </section>
+
+      <section class="projects" aria-labelledby="projects-heading">
+        <h3 id="projects-heading">Projects</h3>
+        <ul>
+          <li><strong>Enterprise Data Platform</strong> — ingestion, processing and analytics for regulatory reporting.</li>
+          <li><strong>AI Assistant</strong> — prototype conversational assistant integrated with enterprise data (privacy-aware).</li>
+          <li><strong>Cloud Migration</strong> — automated migration tooling and governance for multi-account AWS landing zones.</li>
+        </ul>
+      </section>
+        </ul>
+      </section>
+
+      <section id="contact" class="contact">
+        <h3>Contact</h3>
+        <!--
+          Configure the form endpoint by replacing the value of data-endpoint
+          with your Formspree endpoint (https://formspree.io/f/<id>) or with your own API
+        -->
+        <form id="contact-form" novalidate data-endpoint="https://formspree.io/f/YOUR_ID">
+          <label>
+            Name
+            <input name="name" type="text" required />
+          </label>
+          <label>
+            Email
+            <input name="email" type="email" required />
+          </label>
+          <label>
+            Subject
+            <input name="subject" type="text" />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="6" required></textarea>
+          </label>
+          <button class="btn" type="submit">Send message</button>
+          <p id="form-status" role="status" aria-live="polite"></p>
+        </form>
+        <p class="muted">Note: this site is static — configure a form endpoint (Formspree or your API) in the form's <code>data-endpoint</code> attribute.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© <span id="year"></span> My First Website</div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
